@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dhananjay Patil · Computer Science Engineer</title>
+  <meta name="description" content="Portfolio of Dhananjay Patil, final-year computer science engineering student.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chat.css">
+</head>
+
+<body>
+
+  <header class="nav">
+    <a href="#top" class="logo">Dhananjay Patil</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="pill">Hire me</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="hello">Hi, I'm</p>
+        <h1>Dhananjay Patil</h1>
+        <p class="role">I build <span id="typed" aria-live="off"></span><span class="caret"></span></p>
+        <p class="lead">Final-year Computer Science engineering student. I turn ideas into fast, playful web apps, and
+          I'm looking for my first role as a software engineer.</p>
+        <div class="cta">
+          <a class="btn solid" href="#projects">See my projects</a>
+          <a class="btn" href="resume.pdf" download>Download resume</a>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="blob"></div>
+        <svg id="me" viewBox="0 0 1086 1448" xmlns="http://www.w3.org/2000/svg" role="img"
+          aria-label="Cartoon portrait of me in a suit, eyes following your cursor">
+          <defs>
+            <clipPath id="lipClip">
+              <path
+                d="M498 437 C515 441.5 535 442.5 555 442 C575 441.5 595 440.5 607 439.5 L609 444 C600 462 582 471 555 471.5 C528 471 510 462 499 443 Z" />
+            </clipPath>
+            <clipPath id="ce1">
+              <path
+                d="M460 298 C470 289 482 287.5 490 287.5 C503 288.5 512 296 516 303 C505 309 495 308.5 486 308.5 C475 308 466 304 460 298Z" />
+            </clipPath>
+            <clipPath id="ce2">
+              <path
+                d="M598 305.5 C605 298 614 292.5 626 292 C640 292 650 298 652 304 C645 308.5 636 311 626 311.5 C614 311 604 310.5 598 305.5Z" />
+            </clipPath>
+          </defs>
+          <image href="svg/Img2.png" width="1086" height="1448" />
+          <path id="mInner" fill="#3a1411" d="" />
+          <path id="mTeeth" fill="#f1e8e0" d="" />
+          <g id="mLower"></g>
+          <g class="eye" clip-path="url(#ce1)" data-cx="487" data-cy="298" data-mx="9" data-my="2.5">
+            <path class="white"
+              d="M460 298 C470 289 482 287.5 490 287.5 C503 288.5 512 296 516 303 C505 309 495 308.5 486 308.5 C475 308 466 304 460 298Z" />
+            <g class="pupil">
+              <circle r="10" class="iris" />
+              <circle r="6" class="core" />
+              <circle class="shine" cx="-3" cy="-4" r="2.5" />
+            </g>
+          </g>
+          <g class="eye" clip-path="url(#ce2)" data-cx="626" data-cy="301.5" data-mx="9" data-my="2.5">
+            <path class="white"
+              d="M598 305.5 C605 298 614 292.5 626 292 C640 292 650 298 652 304 C645 308.5 636 311 626 311.5 C614 311 604 310.5 598 305.5Z" />
+            <g class="pupil">
+              <circle r="10" class="iris" />
+              <circle r="6" class="core" />
+              <circle class="shine" cx="-3" cy="-4" r="2.5" />
+            </g>
+          </g>
+        </svg>
+        <p class="hint" id="hint">Move your mouse, my eyes are watching</p>
+      </div>
+    </section>
+
+    <section id="about" class="sec">
+      <h2>About me</h2>
+      <div class="about">
+        <p>I'm a final-year engineering student who learns by shipping. Most of my projects start as a small itch, like
+          a chess report that explains <em>why</em> a move was bad, or a music player that works offline, and grow into
+          something people can open and use.</p>
+        <ul class="stats">
+          <li><b>3+</b> projects live</li>
+          <li><b>Final year</b> B.E. Computer Science</li>
+          <li><b>Open</b> to internships &amp; full-time roles</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="sec">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Chesscope</h3>
+          <p>A chess website that runs Stockfish on your games and produces a clear move-by-move report.</p>
+          <p class="tags">JavaScript · Node.js · Stockfish</p>
+          <div class="links"><a href="#">Live demo</a><a href="#">Source</a></div>
+        </article>
+        <article class="card">
+          <h3>Only-Beats</h3>
+          <p>A music player web app with folders, per-folder song lists and a mobile-first UI. Installable as a PWA.</p>
+          <p class="tags">HTML · CSS · JavaScript · PWA</p>
+          <div class="links"><a href="#">Live demo</a><a href="#">Source</a></div>
+        </article>
+        <article class="card">
+          <h3>Living Sticker</h3>
+          <p>A cartoon couple whose eyes follow your mouse on a laptop or a joystick on a phone. The same idea powers
+            this page.</p>
+          <p class="tags">SVG · CSS · JavaScript</p>
+          <div class="links"><a href="#">Live demo</a><a href="#">Source</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="sec">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>
+          <h3>Languages</h3>
+          <p>C · C++ · Java · Python · JavaScript · SQL</p>
+        </div>
+        <div>
+          <h3>Web</h3>
+          <p>HTML · CSS · React · Node.js · REST APIs</p>
+        </div>
+        <div>
+          <h3>Core CS</h3>
+          <p>Data structures · Algorithms · OS · DBMS · Networks</p>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <p>Git · GitHub · VS Code · Linux · Figma</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="sec">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li><span>2024 – 2027</span><b>B.E. in Computer Science</b><em>B. R Harne, Mumbai University </em>
+        </li>
+        <li><span>2024</span><b>Diploma</b><em>(MSBTE) With Distinction · 72.23%</em></li>
+        <li><span>Ongoing</span><b>Certifications &amp; achievements</b><em>Programming in C++,
+            Data Analytics Certification</em></li>
+      </ol>
+    </section>
+
+    <section id="contact" class="sec contact">
+      <h2>Let's work together</h2>
+      <p>I'm looking for roles starting after graduation. The fastest way to reach me is email.</p>
+      <div class="cta">
+        <a class="btn solid" href="mailto:patildhananjay032002@gmail.com">E-Mail</a>
+        <a class="btn" href="https://github.com/only-beats">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/mr-dhananjay-patil-0172902a2">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Dhananjay Patil</footer>
+
+  <!-- joystick: shown on touch devices, moves my eyes -->
+  <div class="joy-wrap" id="joyWrap">
+    <div class="joy-base" id="joyBase">
+      <div class="joy-knob" id="joyKnob"></div>
+    </div>
+    <span class="joy-label">Drag to move my eyes</span>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="faq.js"></script>
+  <script src="chat.js"></script>
+</body>
+
+</html>
