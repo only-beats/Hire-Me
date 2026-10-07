@@ -112,7 +112,11 @@
     updateMouth();
     for (const eye of eyes) {
       let tx = 0, ty = 0;
-      if (mode === 'joy') {
+      if (window.__think) {            // thinking: glance away and sweep side to side
+        tx = -0.8 + Math.sin(performance.now() / 650) * 0.6; ty = -1;
+      } else if (window.__attend) {    // listening: look straight at the visitor
+        tx = 0; ty = 0;
+      } else if (mode === 'joy') {
         tx = joy.x; ty = joy.y;
       } else if (mouse.x !== null) {
         const r = eye.white.getBoundingClientRect();
